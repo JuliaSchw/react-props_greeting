@@ -1,5 +1,14 @@
 import "./styles.css";
 
+function Greeting({ name }) {
+  return <h1>Hello {name} </h1>;
+}
+
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return (
+    <div>
+      <Greeting name={"Julia"} />
+      <Greeting name={"Anna"} />
+    </div>
+  );
 }
